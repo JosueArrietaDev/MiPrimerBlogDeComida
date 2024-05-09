@@ -1,2 +1,14 @@
 
 /* Este es un comentario de una línea en CSS */
+/* Estos son lso estrilos Externos del HTML*/
+body {
+    /* el fondo conn letra y fondo*/
+    font-family: Arial, sans-serif;
+    background-color: #f7f4f4;
+    color: #4e4d4d;
+}
+/* Todos los Tipos H1 */
+h1 {
+    color: #3187dd;     
+}
+
