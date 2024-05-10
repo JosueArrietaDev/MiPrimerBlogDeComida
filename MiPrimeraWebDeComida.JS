@@ -20,3 +20,5 @@ document.addEventListener("DOMContentLoaded", function() {
         listaComentarios.appendChild(nuevoComentario);
     }
 });
+
+// agrege este comentario porque  no me deja gardar, nose-->
