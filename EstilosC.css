@@ -3,16 +3,30 @@
 /* Estos son lso estrilos Externos del HTML*/
 body {
     /* el fondo conn letra y fondo*/
-    font-family: Arial, sans-serif;
-    background-color: #f7f4f4;
-    color: #4e4d4d;
+    font-family: Arial Black , sans-serif;
+    background-color: #b4b2b2;
+    color: #e95d33;
 }
 /* Todos los Tipos H1 */
 h1 {
-    color: #3187dd;     
+    color: rgb(250, 25, 25);     
 }
+h2{
+    color: rgb(250, 25, 25);
+}
+
 h3 {
-    color: rgb(206, 82, 82);
+    color: rgb(250, 25, 25);
+}
+h4{
+    color: rgb(250, 25, 25);
+}
+h5{
+    color: green;
+
+}
+P{
+    color: black;
 }
 
 /* agrege este comentario porque  no me deja gardar, nose-->
