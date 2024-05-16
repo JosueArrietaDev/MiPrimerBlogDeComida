@@ -30,8 +30,8 @@ h4 {
 }
 
 h5 {
-    color: rgb(8, 8, 8);
-    font-style: 40px;
+    color: rgb(2, 19, 255);
+    font-style: 70px;
 
 }
 
@@ -71,9 +71,15 @@ P {
     /* Para mantener la proporción de la imagen */
 
 }
+ul{
+    text-align: left; /* Alinea los comentarios a la izquierda */
+    
+}
+
+
 footer {
     background-color: #b4b2b2;
-    padding: 50px;
+    padding: 0.5px;
     text-align: center;
 }
 
