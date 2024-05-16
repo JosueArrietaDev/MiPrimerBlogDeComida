@@ -1,33 +1,80 @@
-
 /* Este es un comentario de una línea en CSS */
 /* Estos son lso estrilos Externos del HTML*/
 body {
     /* el fondo conn letra y fondo*/
-    font-family: Arial Black , sans-serif;
+    font-family: Arial Black, sans-serif;
     background-color: #b4b2b2;
-    color: #e95d33;
+    text-align: center; /* Alinea el texto al centro */
+    
 }
 /* Todos los Tipos H1 */
 h1 {
-    color: rgb(250, 25, 25);     
+    color: rgb(0, 0, 0);
 }
-h2{
-    color: rgb(250, 25, 25);
+
+h2 {
+    color: rgb(249, 0, 0);
 }
 
 h3 {
+    color: rgb(0, 0, 0);
+    background-color: #b4b2b2;
+    padding: 50px;
+    text-align: center; /* Alinea el texto al centro */
+    text-decoration: underline; /* Subraya el texto */
+}
+
+
+h4 {
     color: rgb(250, 25, 25);
 }
-h4{
-    color: rgb(250, 25, 25);
-}
-h5{
-    color: green;
+
+h5 {
+    color: rgb(8, 8, 8);
+    font-style: 40px;
 
 }
-P{
+
+P {
 
     color: black;
+
+}
+
+#Empanadas img {
+    width: 300px;
+    /* Ancho deseado */
+    height: auto;
+    /* Para mantener la proporción de la imagen */
+}
+
+#Panchos img {
+    width: 300px;
+    /* Ancho deseado */
+    height: auto;
+    /* Para mantener la proporción de la imagen */
+
+}
+
+#Pizzas img {
+    width: 300px;
+    /* Ancho deseado */
+    height: auto;
+    /* Para mantener la proporción de la imagen */
+
+}
+
+#Hamburguesas img {
+    width: 300px;
+    /* Ancho deseado */
+    height: auto;
+    /* Para mantener la proporción de la imagen */
+
+}
+footer {
+    background-color: #b4b2b2;
+    padding: 50px;
+    text-align: center;
 }
 
 
