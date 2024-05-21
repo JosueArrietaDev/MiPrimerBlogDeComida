@@ -1,5 +1,47 @@
 //AQUI VA IR MI HTML de la paginade comida
 
+ 
+// Función para mostrar la sección correspondiente y ocultar las demás
+function mostrarSeccion(id) {
+  // Selecciona todas las secciones y las oculta
+  var secciones = document.querySelectorAll('.section');
+  secciones.forEach(function(seccion) {
+    seccion.classList.remove('visible');
+  });
+
+  // Muestra la sección seleccionada
+  var seccionSeleccionada = document.getElementById(id);
+  seccionSeleccionada.classList.add('visible');
+}
+
+// Obtener los enlaces de la barra de navegación AGREGAR LOS LINMCK
+var inicioLink = document.getElementById('inicioLink');
+var recetasLink = document.getElementById('recetasLink');
+var contactoLink = document.getElementById('contactoLink');
+
+// Asignar eventos de clic a los enlaces de navegación
+inicioLink.addEventListener('click', function(event) {
+  // Previene la acción predeterminada del enlace
+  event.preventDefault();
+  // Muestra la sección "Inicio"
+  mostrarSeccion('inicio');
+});
+
+recetasLink.addEventListener('click', function(event) {
+  // Previene la acción predeterminada del enlace
+  event.preventDefault();
+  // Muestra la sección "Recetas"
+  mostrarSeccion('recetas');
+});
+
+contactoLink.addEventListener('click', function(event) {
+  // Previene la acción predeterminada del enlace
+  event.preventDefault();
+  // Muestra la sección "Contacto"
+  mostrarSeccion('contacto');
+});
+
+//funcion de formilario,  o comentarios.
 //el addevent crea un evento de intercacciones del usurio
 document.addEventListener("DOMContentLoaded", function () { 
   const formularioComentario = document.getElementById("formulario-comentario");
@@ -33,12 +75,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const nuevoComentario = document.createElement("li");
     nuevoComentario.textContent = comentario;
     listaComentarios.appendChild(nuevoComentario);
-  }
-});
-/* que crea un nuevo elemento de lista (<li>) en el DOM, establece
+  }/* que crea un nuevo elemento de lista (<li>) en el DOM, establece
  su contenido de texto como el comentario proporcionado y
  luego lo agrega a la lista de comentarios en la página.*/
-
-
+});
 
 // agrege este comentario porque  no me deja gardar, nose-->
+

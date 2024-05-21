@@ -24,7 +24,6 @@ h3 {
     text-decoration: underline; /* Subraya el texto */
 }
 
-
 h4 {
     color: rgb(250, 25, 25);
 }
@@ -71,17 +70,19 @@ P {
     /* Para mantener la proporción de la imagen */
 
 }
+
 ul{
     text-align: left; /* Alinea los comentarios a la izquierda */
     
 }
-
 
 footer {
     background-color: #b4b2b2;
     padding: 0.5px;
     text-align: center;
 }
+
+
 
 
 /* agrege este comentario porque  no me deja gardar, nose-->
