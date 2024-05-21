@@ -1,88 +1,43 @@
 /* Este es un comentario de una línea en CSS */
 /* Estos son lso estrilos Externos del HTML*/
-body {
-    /* el fondo conn letra y fondo*/
-    font-family: Arial Black, sans-serif;
-    background-color: #b4b2b2;
-    text-align: center; /* Alinea el texto al centro */
-    
-}
-/* Todos los Tipos H1 */
-h1 {
-    color: rgb(0, 0, 0);
-}
-
-h2 {
-    color: rgb(249, 0, 0);
+.header{
+    text-align: center;  
+    padding: 40px;
+    background-color: #f57e3a;
+    nav a {
+        color: #fff;
+        padding: 40px;
+        font-size: 20px;
+        text-decoration: none;
+    }
 }
 
-h3 {
-    color: rgb(0, 0, 0);
-    background-color: #b4b2b2;
-    padding: 50px;
-    text-align: center; /* Alinea el texto al centro */
-    text-decoration: underline; /* Subraya el texto */
+.titulo {
+    text-align: center;
+    background-color: #f8c621;
+    color: #c70039;
 }
 
-h4 {
-    color: rgb(250, 25, 25);
-}
-
-h5 {
-    color: rgb(2, 19, 255);
-    font-style: 70px;
-
-}
-
-P {
-
-    color: black;
-
-}
-
-#Empanadas img {
-    width: 300px;
-    /* Ancho deseado */
-    height: auto;
-    /* Para mantener la proporción de la imagen */
-}
-
-#Panchos img {
-    width: 300px;
-    /* Ancho deseado */
-    height: auto;
-    /* Para mantener la proporción de la imagen */
-
-}
-
-#Pizzas img {
-    width: 300px;
-    /* Ancho deseado */
-    height: auto;
-    /* Para mantener la proporción de la imagen */
-
-}
-
-#Hamburguesas2 img {
-    width: 300px;
-    /* Ancho deseado */
-    height: auto;
-    /* Para mantener la proporción de la imagen */
-
-}
-
-ul{
-    text-align: left; /* Alinea los comentarios a la izquierda */
-    
-}
-
-footer {
-    background-color: #b4b2b2;
-    padding: 0.5px;
+.subtitulos{
     text-align: center;
 }
 
+.texto{
+    p{
 
+    }
+}
 
+.contenedor {
+    display: flex;
+}
 
-/* agrege este comentario porque  no me deja gardar, nose-->
+.imagen {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin-left: 20px;
+}
+
+.texto {
+    flex: 2; /* Ocupa el doble de espacio que la imagen */
+    padding: 20px; /* Añade un espacio alrededor del texto para mayor legibilidad  */
+}

@@ -1,6 +1,3 @@
-<!-- AQUI VA IR MI HTML 
-PARA PROVAR EN GOOGLE COMO QUEDA -->
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -14,178 +11,119 @@ PARA PROVAR EN GOOGLE COMO QUEDA -->
     "revisar" -->
 
     <meta name="keywords" content="HTML, ejemplo, etiquetas, página web" />
-    <!-- palabras clave (en el achivo del profe) PUEDE NO IR TAMBIEN-->
-
+    <!-- Palabras clave -->
     <meta name="author" content="Josué Ezequiel Arrieta" />
-    <!--Meta para definir el autor de la pagina-->
-    <title>El Menú.</title>
-    <!--TITULO (nada mas)-->
+    <!-- Meta para definir el autor de la página -->
+    <title>El Menú</title>
+    <!-- Título -->
     <link rel="stylesheet" href="EstilosC.css" />
-    <!-- Llama al css de la pagina-->
+    <!-- Llama al CSS de la página -->
     <script src="MiPrimerB.JS" defer></script>
-    <!-- Llama al JS de la pagina-->
-  </head>
-<!-- Este es el encabezado-->
-  <header>
-    <h1>A Comer!</h1>
+    <!-- Llama al JS de la página -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <!-- Este es el encabezado -->
+    <header class="header">
+      <!-- Podemos agregar un logo dentro de este header-->
+    <nav>
+      <a href="#">INICIO</a>
+      <a href="#">MENÚ</a>
+      <a href="#">QUIENES SOMOS</a>
+      <a href="#">RESERVA</a>
+      <a href="#">CONTACTO</a>
+    </nav>
+    </header>
+    <div class="titulo">
+    <h1>¡A COMER!</h1>
     <!-- Título principal -->
-    <h3>La gastronomia desde mis gustos.</h3>
-
-  </header>
-
-  <body>
-    
-    <section> id="inicio" class="section"
-      <!-- Inicia la sección "Inicio" con un identificador único y una clase común -->
-      <h2>¡Bienvenido a mi blog!</h2>
-      <!-- Título de la sección "Inicio" -->
-      <p>Este es el contenido de la sección de inicio.</p>
-      <!-- Contenido de la sección "Inicio" -->
-      <nav>
-        <ul>
-         <!-- Elemento de lista para el enlace a la sección "Inicio" -->
-        <li><a href="#" id="inicio">Inicio</a></li></ul>
-      </nav>
-    </section>
-    <!-- Cierra la sección "Inicio" -->
-    
-    <section id="recetas" class="section">
-      <!-- Inicia la sección "Recetas" con un identificador único y una clase común -->
-      <h2>Recetas</h2>
-      <!-- Título de la sección "Recetas" -->
-      <p>
-        Aquí encontrarás deliciosas recetas para probar en casa.
-      </p>
-      <!-- Contenido de la sección "Recetas" -->
-        <nav>
-          <ul>
-            <li><a href="#" id="https://www.recetasgratis.net/receta-de-hamburguesas-de-carne-34832.html">Recetas</a></li>
-            <!-- Elemento de lista para el enlace a la sección "Contacto" -->
-          </ul>
-        </nav>
-    </section>
-    <!-- Cierra la sección "Recetas" -->
-    
-    <section id="contacto" class="section">
-      <!-- Inicia la sección "Contacto" con un identificador único y una clase común -->
-      <h2>Contacto</h2>
-      <!-- Título de la sección "Contacto" -->
-      <p>¿Tienes alguna pregunta o sugerencia? ¡Contáctame!</p>
-      
-      <nav> 
-        <ul>
-          <li><a href="#" id="contactoLink">Contacto</a></li>
-      <!-- Contenido de la sección "Contacto" -->
-        </ul>
-      </nav>
-    </section>
+    <p>Nuestra selección de las comidas que no se pueden perder si están en Mendoza. Mostramos 4 de las mejores comdias.</p>
     <!-- Contenido principal -->
+    </div>
     <main>
-
-      <!-- Sección 1 -->
-      <section id="Hamburguesas2">
-        <h2>Hamburguesas</h2>
-        <!-- Título de la sección -->
-        <img
-          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.infobae.com%2Ftendencias%2F2024%2F05%2F11%2Fhamburguesas-gigantes-y-de-autor-una-guia-de-lugares-y-recetas-para-disfrutarlas-al-maximo%2F&psig=AOvVaw2_FPbbTlb8Bbyvip88tbdo&ust=1716005599408000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNCVtbHpk4YDFQAAAAAdAAAAABAE"
-          alt="Descripción de la imagen"
-        />
-        <p>
-          La hamburguesa es una obra maestra entre dos panes. Una jugosa carne
-          de vaca, sazonada a la perfección, acompañada de queso derretido,
-          lechuga, tomate y cebolla, todo coronado con una generosa porción de
-          salsa chimichurri o criolla.
-        </p>
-        <!-- Párrafo -->
-        <div class="reacciones">
-          <button class="like">👍</button>
-          <button class="dislike">👎</button>
-          <span class="contador">0</span>
+      <h1 class="subtitulos"> La gastronomía desde mis gustos </h1>
+        <!-- Sección 1 -->
+          <div class="contenedor">
+            <div class="imagen">
+                <img src="https://i.pinimg.com/564x/33/14/4f/33144f7a4a9148e0e2077d978cdd91a7.jpg" alt="Descripción de la imagen">
+            </div>
+            <div class="texto">
+              <h2>Hamburguesa</h2>
+                <p>La hamburguesa es una obra maestra entre dos panes. Una jugosa carne de vaca, sazonada a la perfección, acompañada de queso derretido, lechuga, tomate y cebolla, todo coronado con una generosa porción de salsa chimichurri o criolla.</p>
+            </div>
         </div>
-      </section>
+            <div class="reacciones">
+                <button class="like">👍</button>
+                <button class="dislike">👎</button>
+                <span class="contador">0</span>
+            </div>
 
-      <!-- Sección 2 -->
-      <section id="Pizzas">
-        <h2>Pizzas</h2>
-        <img
-          src="https://www.google.com/imgres?q=foto%20de%20pizzas%20que%20no%20tenga%20derecho%20de%20autor&imgurl=https%3A%2F%2Fmedia.c5n.com%2Fp%2F7bbb5aa65dd4fe00a5c55a59b72beb0e%2Fadjuntos%2F326%2Fimagenes%2F000%2F246%2F0000246629%2F790x0%2Fsmart%2Fsanto-7090jpg.jpg&imgrefurl=https%3A%2F%2Fwww.c5n.com%2Flifestyle%2Fdia-mundial-la-pizza-5-propuestas-increibles-ir-celebrar-n145991&docid=hFqdTNBnNV39LM&tbnid=uFbQERaTdh4JyM&vet=12ahUKEwiU_oGw5pOGAxXQrZUCHbkmDscQM3oECF8QAA..i&w=790&h=527&hcb=2&ved=2ahUKEwiU_oGw5pOGAxXQrZUCHbkmDscQM3oECF8QAA"
-          alt="Descripción de la imagen"
-        />
-        <p>
-          Las pizzas son pura pasión y sabor. Una base de masa crujiente, con
-          una generosa capa de salsa y un montón de queso derretido. Y van desde
-          las clásicas mozzarellas, hasta las mas exoticas como las tipo
-          Tropical.
-        </p>
-        <div class="reacciones">
-          <button class="like">👍</button>
-          <button class="dislike">👎</button>
-          <span class="contador">0</span>
-        </div>
-      </section>
+        <!-- Sección 2 -->
+            <div class="contenedor">
+              <div class="imagen">
+                  <img src="https://i.pinimg.com/564x/33/14/4f/33144f7a4a9148e0e2077d978cdd91a7.jpg" alt="Descripción de la imagen">
+              </div>
+              <div class="texto">
+                <h2>Pizza</h2>
+                  <p>Las pizzas son pura pasión y sabor. Una base de masa crujiente, con una generosa capa de salsa y un montón de queso derretido. Y van desde las clásicas mozzarellas, hasta las más exóticas como las tipo Tropical.</p>
+              </div>
+          </div>
+              <div class="reacciones">
+                  <button class="like">👍</button>
+                  <button class="dislike">👎</button>
+                  <span class="contador">0</span>
+              </div>
 
-      <!-- Sección 3 -->
-      <section id="Panchos">
-        <h2>Panchos</h2>
-        <img
-          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnoticias.perfil.com%2Fnoticias%2Frestaurante%2Fdia-mundial-del-pancho-8-opciones-que-hay-que-probar.phtml&psig=AOvVaw3ZUUkyJr51QlbUHi4gg59I&ust=1716004760280000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMDlyYbmk4YDFQAAAAAdAAAAABAE"
-          alt="Descripción de la imagen"
-        />
-        <p>
-          El pancho es un clasico que nunca falla, Es una salchicha jugosa
-          envuelta en un suave pancito, acompañada de una explosión de sabores
-          que van desde la salsa golf hasta el chimichurri, pasando por la
-          mayonesa, el ketchup y la mostaza y cerrandolo con la lluvia de papas.
-        </p>
-        <div class="reacciones">
-          <button class="like">👍</button>
-          <button class="dislike">👎</button>
-          <span class="contador">0</span>
-        </div>
-      </section>
+        <!-- Sección 3 -->
+        <div class="contenedor">
+          <div class="imagen">
+              <img src="https://i.pinimg.com/564x/33/14/4f/33144f7a4a9148e0e2077d978cdd91a7.jpg" alt="Descripción de la imagen">
+          </div>
+          <div class="texto">
+            <h2>Panchos</h2>
+              <p>El pancho es un clásico que nunca falla. Es una salchicha jugosa envuelta en un suave pancito, acompañada de una explosión de sabores que van desde la salsa golf hasta el chimichurri, pasando por la mayonesa, el ketchup y la mostaza, y cerrándolo con una lluvia de papas.</p>
+          </div>
+      </div>
+          <div class="reacciones">
+              <button class="like">👍</button>
+              <button class="dislike">👎</button>
+              <span class="contador">0</span>
+          </div>
 
-      <!-- Sección 4 -->
-      <section id="Empanadas">
-        <h2>Empanadas</h2>
-        <img
-          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.infobae.com%2Ftendencias%2F2023%2F05%2F24%2Ftres-recetas-de-empanadas-faciles-rapidas-y-clasicas-para-celebrar-el-25-de-mayo%2F&psig=AOvVaw00PukLCe2zwfwRvBAKyowd&ust=1716004650367000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPDxrNXlk4YDFQAAAAAdAAAAABAE"
-          alt="Descripción de la imagen"
-        />
-        <p>
-          Las empanadas estas pequeñas obras de arte... rellenas de: carne,
-          pollo, jamón y queso, o verduras, te van llevar, por un viaje al norte
-          argentino por su mezcla de ingredientes.
-        </p>
-        <div class="reacciones">
-          <button class="like">👍</button>
-          <button class="dislike">👎</button>
-          <span class="contador">0</span>
-        </div>
-      </section>
-    </main>
+        <!-- Sección 4 -->
+        <div class="contenedor">
+          <div class="imagen">
+              <img src="https://i.pinimg.com/564x/33/14/4f/33144f7a4a9148e0e2077d978cdd91a7.jpg" alt="Descripción de la imagen">
+          </div>
+          <div class="texto">
+            <h2>Empanadas</h2>
+              <p>¿Has probado las auténticas empanadas de Mendoza? Descubre una explosión de sabor con nuestro relleno jugoso y auténtico. ¡Ven y disfruta de una experiencia gastronómica única! Te esperamos en nuestro local con los sabores más deliciosos. ¡No te lo pierdas!</p>
+          </div>
+      </div>
+          <div class="reacciones">
+              <button class="like">👍</button>
+              <button class="dislike">👎</button>
+              <span class="contador">0</span>
+          </div>
 
     <div id="comentarios">
-      <h5>Comentarios</h5>
-      <ul id="lista-comentarios">
-        <!-- Acá se van a mostrar los comentarios -->
-      </ul>
-      <form id="formulario-comentario">
-        <input
-          type="text"
-          id="input-comentario"
-          placeholder="Escribí tu comentario"
-        />
-        <button type="submit">Comentar</button>
-      </form>
+        <h5>Comentarios</h5>
+        <ul id="lista-comentarios">
+            <!-- Acá se van a mostrar los comentarios -->
+        </ul>
+        <form id="formulario-comentario">
+            <input type="text" id="input-comentario" placeholder="Escribí tu comentario" />
+            <button type="submit">Comentar</button>
+        </form>
     </div>
 
     <script src="MiPrimerBlog.JS"></script>
+    <br>
+    <footer id="Footer">
+        <p>Este es mi pie de página 2024 a ver cómo queda °>°</p>
+    </footer>
+</body>
 
-    <breack>
-      <footer>
-        <p>Este es mi pie de paguina 2024 aver como queda °>°</p>
-      </footer>
-    </breack>
-  </body>
 </html>
-<!-- agrege este comentario porque  no me deja gardar, nose-->
