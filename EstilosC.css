@@ -26,7 +26,8 @@ nav a {
 }
 
 .texto p {
-    color: red;
+    color: rgb(255, 27, 27);
+    font-family: arial black;
 
 }
 
@@ -48,4 +49,7 @@ nav a {
     /* Ocupa el doble de espacio que la imagen */
     padding: 20px;
     /* Añade un espacio alrededor del texto para mayor legibilidad  */
+}
+footer {
+    text-align: center;
 }
