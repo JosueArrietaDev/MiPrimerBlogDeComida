@@ -1,16 +1,19 @@
 /* Este es un comentario de una línea en CSS */
 /* Estos son lso estrilos Externos del HTML*/
-.header{
-    text-align: center;  
+.header {
+    text-align: center;
     padding: 40px;
     background-color: #f57e3a;
-    nav a {
-        color: #fff;
-        padding: 40px;
-        font-size: 20px;
-        text-decoration: none;
-    }
+
 }
+
+nav a {
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 
 .titulo {
     text-align: center;
@@ -18,26 +21,31 @@
     color: #c70039;
 }
 
-.subtitulos{
+.subtitulos {
     text-align: center;
 }
 
-.texto{
-    p{
+.texto p {
+    color: red;
 
-    }
 }
+
 
 .contenedor {
     display: flex;
+    margin-bottom: 20px;
+    /* Agregué un margen inferior para separar los contenedores */
 }
 
 .imagen {
-    flex: 1; /* Ocupa todo el espacio disponible */
-    margin-left: 20px;
+    flex: 1;
+    /* Ocupa todo el espacio disponible */
+    margin-right: 20px;
 }
 
 .texto {
-    flex: 2; /* Ocupa el doble de espacio que la imagen */
-    padding: 20px; /* Añade un espacio alrededor del texto para mayor legibilidad  */
+    flex: 2;
+    /* Ocupa el doble de espacio que la imagen */
+    padding: 20px;
+    /* Añade un espacio alrededor del texto para mayor legibilidad  */
 }
