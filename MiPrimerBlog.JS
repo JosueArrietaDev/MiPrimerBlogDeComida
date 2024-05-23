@@ -40,42 +40,39 @@ contactoLink.addEventListener("click", function (event) {
   mostrarSeccion("contacto");
 });
 
-//funcion de formilario,  o comentarios.
-//el addevent crea un evento de intercacciones del usurio
+// Espera a que se cargue completamente el contenido del documento HTML
 document.addEventListener("DOMContentLoaded", function () {
-  const formularioComentario = document.getElementById("formulario-comentario");
-  const inputComentario = document.getElementById("input-comentario");
-  const listaComentarios = document.getElementById("lista-comentarios");
-  // son los 3 elementos de la funcion
-
-  formularioComentario.addEventListener("submit", function (event) {
-    //Cuando se formulario el envia, se ejecutará la función sigue.
-
-    event.preventDefault();
-    /* previene el comportamiento por defecto del formulario, que sería recargar 
-     la página al ser enviado el formulario*/
-
-    const comentario = inputComentario.value;
-    //se obtiene el valor del comentario que el usuario ha ingresado
-
-    if (comentario.trim() !== "") {
-      //verifica si el comentario ingresado por el usuario no está vacío
-
-      agregarComentario(comentario);
-      inputComentario.value = "";
-      /*Si el comentario no está vacío, se llama a la función agregarComentario
-      para agregar el comentario a la lista y luego se limpia el campo de entrada 
-      estableciendo su valor en una cadena vacía.*/
+    // Obtiene referencias a los elementos del formulario y de la lista de comentarios
+    const formularioComentario = document.getElementById("formulario-comentario");
+    const inputComentario = document.getElementById("input-comentario");
+    const listaComentarios = document.getElementById("lista-comentarios");
+// Agrega un event listener al formulario para el evento 'submit'
+    formularioComentario.addEventListener("submit", function (event) {
+      // Previene el comportamiento por defecto del formulario (enviar los datos a algún lugar)
+        event.preventDefault();
+        // Obtiene el valor del comentario y del nombre de usuario de los campos correspondientes
+        const comentario = inputComentario.value;
+        const username = document.getElementById('username').value; 
+// Verifica que tanto el comentario como el nombre de usuario no estén vacíos
+        if (comentario.trim() !== "" && username.trim() !== "") { 
+   // Llama a la función 'agregarComentario()' para agregar el comentario a la lista de comentarios        
+            agregarComentario(username, comentario); 
+            // Limpia los campos de comentario y nombre de usuario después de agregar el comentario
+            inputComentario.value = "";
+            document.getElementById('username').value = ""; 
+        } else {
+          // Muestra una alerta pidiendo al usuario que introduzca su nombre y comentario
+          alert('Por favor, introduce tu nombre y comentario.');
+        }
+    });
+// Define la función para agregar un comentario a la lista de comentarios
+    function agregarComentario(username, comentario) { 
+      // Crea un nuevo elemento de lista (<li>)
+        const nuevoComentario = document.createElement("li");
+ // Asigna el contenido del comentario junto con el nombre de usuario en formato de negrita
+        nuevoComentario.innerHTML = '<strong>' + username + ':</strong> ' + comentario;
+   // Agrega el nuevo elemento a la lista de comentarios   
+        listaComentarios.appendChild(nuevoComentario);
     }
-  });
-
-  function agregarComentario(comentario) {
-    const nuevoComentario = document.createElement("li");
-    nuevoComentario.textContent = comentario;
-    listaComentarios.appendChild(nuevoComentario);
-  } /* que crea un nuevo elemento de lista (<li>) en el DOM, establece
- su contenido de texto como el comentario proporcionado y
- luego lo agrega a la lista de comentarios en la página.*/
 });
 
-// agrege este comentario porque  no me deja gardar, nose-->
