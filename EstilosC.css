@@ -68,25 +68,17 @@ nav a {
 }
 
 .reacciones {
-    margin-left: 30px;
-    /*mueve las reacciones 30 pixeles a la izquierda*/
-    margin-top: 15px;
-    /*mueve las el margen de las reacciones 15 pixeles hacia arriba */
-    margin-bottom: 15px;
-    /*mueve las el margen de las reacciones 15 pixeles hacia abajo */
-}
-
-/* Estilos adicionales para los botones y el contador */
-.reacciones button {
+    margin-bottom: 10px;
+  }
+  .like, .dislike {
     font-size: 20px;
-    padding: 8px;
-}
-
-.reacciones .contador {
-    font-size: 18px;
-    margin: 0 10px;
-}
-
+    cursor: pointer;
+  }
+  .contador {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
 .Footer {
     margin-left: 30px;
     /* no se puede mover el footer a la izquierda*/
