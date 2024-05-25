@@ -8,12 +8,11 @@
   <!-- este viewport trata de establecer:
   "width=device-width" Esto ajusta la pagina a cualquer dispositivo
     
-  "initial-scale=1.0" zoom inicial al "100%"   
-  "revisar" -->
+  "initial-scale=1.0" zoom inicial al "100%"-->
 
   <meta name="keywords" content="HTML, ejemplo, etiquetas, página web" />
   <!-- Palabras clave -->
-  <meta name="author" content="Josué Ezequiel Arrieta" />
+  <meta name="author" content="SQUAD 1-Celsius" />
   <!-- Meta para definir el autor de la página -->
   <title>El Menú</title>
   <!-- Título -->
@@ -67,7 +66,7 @@
         <div class="imagen">
           <img src="https://i.pinimg.com/564x/33/14/4f/33144f7a4a9148e0e2077d978cdd91a7.jpg"
            alt="Descripción de la imagen" />
-           
+
         </div>
         <div class="texto">
           <h2>Hamburguesa</h2>
@@ -165,6 +164,7 @@
       <button type="submit">Comentar</button>
     </form>
   </div>
+
   <br>
   <br>
 
@@ -172,8 +172,30 @@
     <p>&copy; "pie de página" 2024 Grupo 1 Todos los derechos reservados.</p>
   </footer>
 
-
-
+  <script>
+    // Obtener todos los elementos con la clase 'reacciones'
+    var reacciones = document.querySelectorAll('.reacciones');
+    
+    // Iterar sobre cada elemento y agregar la funcionalidad
+    reacciones.forEach(function(reaccion) {
+      // Obtener elementos "hijos" por decirlo de una forma
+      var likeBtn = reaccion.querySelector('.like');
+      var dislikeBtn = reaccion.querySelector('.dislike');
+      var contador = reaccion.querySelector('.contador');
+    
+      // Agregar evento de clic al botón de "like"
+      likeBtn.addEventListener('click', function() {
+        // Incrementar el contador en 1
+        contador.textContent = parseInt(contador.textContent) + 1;
+      });
+    
+      // Agregar evento de clic al botón de "dislike"
+      dislikeBtn.addEventListener('click', function() {
+        // Decrementar el contador en 1, evitando que sea menor que cero
+        contador.textContent = Math.max(parseInt(contador.textContent) - 1, 0);
+      });
+    });
+  </script>
 
 </body>
 
