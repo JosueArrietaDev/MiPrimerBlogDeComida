@@ -1,5 +1,6 @@
 /* Este es un comentario de una línea en CSS */
-/* Estos son lso estrilos Externos del HTML*/
+/* Estos son los estilos Externos del HTML*/
+
 .header {
     text-align: center;
     padding: 40px;
@@ -69,15 +70,17 @@ nav a {
 
 .reacciones {
     margin-bottom: 10px;
-  }
-  .like, .dislike {
+}
+
+.like, .dislike {
     font-size: 20px;
     cursor: pointer;
-  }
-  .contador {
+}
+
+.contador {
     margin-left: 10px;
     font-size: 16px;
-  }
+}
   
 .Footer {
     margin-left: 30px;
