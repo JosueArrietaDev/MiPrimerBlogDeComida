@@ -1,4 +1,7 @@
 //AQUI VA IR MI HTML de la paginade comida
+//
+<button onclick="redirigir('Barra_de_seleccion\contacto.txt')">contactoLink</button>
+
 
 // Función para mostrar la sección correspondiente y ocultar las demás
 function mostrarSeccion(id) {
