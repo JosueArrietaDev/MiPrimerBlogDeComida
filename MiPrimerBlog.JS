@@ -2,19 +2,7 @@
 //
 <button onclick="redirigir('Barra_de_seleccion\contacto.txt')">contactoLink</button>
 
-
-// Función para mostrar la sección correspondiente y ocultar las demás
-function mostrarSeccion(id) {
-  // Selecciona todas las secciones y las oculta
-  var secciones = document.querySelectorAll(".section");
-  secciones.forEach(function (seccion) {
-    seccion.classList.remove("visible");
-  });
-
-  // Muestra la sección seleccionada
-  var seccionSeleccionada = document.getElementById(id);
-  seccionSeleccionada.classList.add("visible");
-}
+//nose q hacian estas lineas 
 
 // Obtener los enlaces de la barra de navegación AGREGAR LOS LINMCK
 var inicioLink = document.getElementById("inicioLink");
@@ -32,8 +20,8 @@ inicioLink.addEventListener("click", function (event) {
 recetasLink.addEventListener("click", function (event) {
   // Previene la acción predeterminada del enlace
   event.preventDefault();
-  // Muestra la sección "Recetas"
-  mostrarSeccion("recetas");
+  // Muestra la sección "menu"
+  mostrarSeccion("Menu");
 });
 
 contactoLink.addEventListener("click", function (event) {
