@@ -86,3 +86,13 @@ nav a {
     margin-left: 30px;
     /* no se puede mover el footer a la izquierda*/
 }
+.texto h2 {
+    color: #f57e3a;
+}
+
+#comentarios {
+    text-align: center;
+    h5{
+        font-size: 30px;
+    }
+}
