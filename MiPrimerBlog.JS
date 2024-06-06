@@ -1,42 +1,11 @@
 //AQUI VA IR MI HTML de la paginade comida
-//
-<button onclick="redirigir('Barra_de_seleccion\contacto.txt')">contactoLink</button>
-
-//nose q hacian estas lineas 
-
-// Obtener los enlaces de la barra de navegación AGREGAR LOS LINMCK
-var inicioLink = document.getElementById("inicioLink");
-var recetasLink = document.getElementById("recetasLink");
-var contactoLink = document.getElementById("contactoLink");
-
-// Asignar eventos de clic a los enlaces de navegación
-inicioLink.addEventListener("click", function (event) {
-  // Previene la acción predeterminada del enlace
-  event.preventDefault();
-  // Muestra la sección "Inicio"
-  mostrarSeccion("inicio");
-});
-
-recetasLink.addEventListener("click", function (event) {
-  // Previene la acción predeterminada del enlace
-  event.preventDefault();
-  // Muestra la sección "menu"
-  mostrarSeccion("Menu");
-});
-
-contactoLink.addEventListener("click", function (event) {
-  // Previene la acción predeterminada del enlace
-  event.preventDefault();
-  // Muestra la sección "Contacto"
-  mostrarSeccion("contacto");
-});
 
 // Espera a que se cargue completamente el contenido del documento HTML
 document.addEventListener("DOMContentLoaded", function () {
   // Obtiene referencias a los elementos del formulario y de la lista de comentarios
-  const formularioComentario = document.getElementById("formulario-comentario");
-  const inputComentario = document.getElementById("input-comentario");
-  const listaComentarios = document.getElementById("lista-comentarios");
+  const formularioComentario = document.getElementById("formularioComentario");
+  const inputComentario = document.getElementById("inputComentario");
+  const listaComentarios = document.getElementById("listaComentarios");
   // Agrega un event listener al formulario para el evento 'submit'
   formularioComentario.addEventListener("submit", function (event) {
     // Previene el comportamiento por defecto del formulario (enviar los datos a algún lugar)
@@ -66,4 +35,31 @@ document.addEventListener("DOMContentLoaded", function () {
     // Agrega el nuevo elemento a la lista de comentarios
     listaComentarios.appendChild(nuevoComentario);
   }
+});
+
+// Obtener los enlaces de la barra de navegación AGREGAR LOS LINMCK
+var inicioLink = document.getElementById("inicioLink");
+var recetasLink = document.getElementById("recetasLink");
+var contactoLink = document.getElementById("contactoLink");
+
+// Asignar eventos de clic a los enlaces de navegación
+inicioLink.addEventListener("click", function (event) {
+  // Previene la acción predeterminada del enlace
+  event.preventDefault();
+  // Muestra la sección "Inicio"
+  mostrarSeccion("inicio");
+});
+
+recetasLink.addEventListener("click", function (event) {
+  // Previene la acción predeterminada del enlace
+  event.preventDefault();
+  // Muestra la sección "menu"
+  mostrarSeccion("Menu");
+});
+
+contactoLink.addEventListener("click", function (event) {
+  // Previene la acción predeterminada del enlace
+  event.preventDefault();
+  // Muestra la sección "Contacto"
+  mostrarSeccion("contacto");
 });
