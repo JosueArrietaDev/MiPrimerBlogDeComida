@@ -3,133 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>"Contacto"</title>
-  <meta name="author" content="SQUAD 1-Celsius" />
-  <link rel="icon" type="image/png" href="fav_Iconos\mi blog.jpg"/>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f0f0f0; /* Fondo gris claro */
-
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      font-size: 1.5em
-      
-    }
-
-    h2{
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      color: green;
-      text-align: center;
-      font-size: 1.5em
-    }
-
-    h3{
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      color: rgb(250, 102, 4);
-      text-align: center;
-      font-size: 1.5em
-      
-    }
-
-    h4{
-      color: rgb(25, 0, 255);
-      margin-bottom: 30px;
-      text-align: center;
-      font-size: 1.5em
-    }
-
-    h5{
-      text-align: center;
-      color: black;
-      font-size: 1.5em
-      
-    }
-
-    h6{
-      text-align: center;
-      color: rgb(253, 11, 160);
-      font-size: 1.5em
-    }
-
-    p {
-      text-align: center;
-      margin-bottom: 10px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 1.5em
-    }
-
-    footer{
-      font-size: arial black;
-      
-      text-align: center;
-
-    }
-  </style>
-
+  <title>Contacto</title>
+  <link rel="stylesheet" href="contacto.css">
+  <link rel="icon" type="image/png" href="mi blog.jpg"/>
 </head>
 <body>
-  <section>
-    <a href="comida.html">Atrás</a> <!-- darle css al boton de *atras*-->
-    <!-- seccion de contactos parae el css-->
-    <h3>El MENU:</h3><br>
-    <br>
-    <h1>"Contactos: Pedidos, Reclamos y Sugerencias"."</h1>
-    <br>
-    <h2>WhatsApp:</h2>
-    <h1>261-1234567</h1>
-    <br>
-    <h4>Facebook:</h4>
-    <h4>@EL_MENU_fb_Prueba</h4>
-    <br>
-    <h6>Instagram:</h6>
-    <h6>@El_MENU_ig_Prueba</h6>
-    <br>
-    <h1>Dueños:</h1>
-    <br>
-    <h5>Josue:</h5> 
-    <p>
-    [+54 9 2611234567]
-    <br>
-    <br>
-    [4correoaleatorio@gimal.com]
-    </p>
-    <h5>Agustin:</h5>
-    <p>
-    [1correoaleatorio@gimal.com]
-    <br>
-    <br>
-    [+54 9 2611234567]
-    </p>
+  <header>
+    <h1 class="titulo">Contactos: Pedidos, Reclamos y Sugerencias</h1>
+  </header>
+  
+  <main>
+    <section class="menu">
+      <h2>El MENÚ:</h2>
+      <div class="imagenes-redes-sociales">
+        <div class="contacto whatsapp">
+          <img src="/imagenes/whatsapp.jpg" alt="WhatsApp Logo">
+          <div class="detalles">
+            <h3>WhatsApp:</h3>
+            <p>261-1234567</p>
+          </div>
+        </div>
+        <div class="contacto facebook">
+          <img src="/imagenes/facebook.jpg" alt="Facebook Logo">
+          <div class="detalles">
+            <h3>Facebook:</h3>
+            <p>@EL_MENU_fb_Prueba</p>
+          </div>
+        </div>
+        <div class="contacto instagram">
+          <img src="/imagenes/instangram.jpg" alt="Instagram Logo">
+          <div class="detalles">
+            <h3>Instagram:</h3>
+            <p>@El_MENU_ig_Prueba</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="dueños">
+      <h2>Dueños:</h2>
+      <div class="dueño">
+        <h3>Josue:</h3>
+        <p>Tel: +54 9 2611234567<br>Email: 4correoaleatorio@gimal.com</p>
+      </div>
+      <div class="dueño">
+        <h3>Agustin:</h3>
+        <p>Tel: +54 9 2611234567<br>Email: 1correoaleatorio@gimal.com</p>
+      </div>
+      <div class="dueño">
+        <h3>Lilo:</h3>
+        <p>Tel: +54 9 2611234567<br>Email: 2correoaleatorio@gimal.com</p>
+      </div>
+      <div class="dueño">
+        <h3>Lala:</h3>
+        <p>Tel: +54 9 2611234567<br>Email: 3correoaleatorio@gimal.com</p>
+      </div>
+    </section>
+    <a href="comida.html" class="btn-volver">Volver</a>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Grupo 1. Todos los derechos reservados. "Pie de página"</p>
 
-    <h5>Lilo:</h5>
-    <p>
-    [2correoaleatorio@gimal.com]
-    <br>
-    <br>
-    [+54 9 2611234567]
-    </p>
-
-    <h5>Lala:</h5>
-    <p>
-    [3correoaleatorio@gimal.com]
-    <br>
-    <br>
-    [+54 9 2611234567]
-    </p>
-  </section>
-  <br>
-  <br>
-  <footer id="Footer">
-      <p>&copy; "pie de página" 2024 Grupo 1 Todos los derechos reservados.</p>
   </footer>
-   
 </body>
 </html>

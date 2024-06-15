@@ -1,0 +1,64 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e9c46a; /* Fondo gris claro */
+  }
+  
+  /* Estilos para encabezados */
+  h1, h2, h3 {
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 2em; /* Tamaño de fuente más grande para encabezados */
+    font-weight: bold; /* Negrita para todos los encabezados */
+    color: #f4a261; /* Color azul para todos los encabezados */
+  }
+  
+  h1 {
+    color: #e76f51; /* Color naranja para h1 */
+  }
+  
+  h2 {
+    color: #e76f51; /* Manteniendo color azul para h2 */
+  }
+  
+  h3 {
+    color: #e76f51; /* Color rosa para h3 */
+  }
+  
+  /* Estilos para párrafos */
+  p {
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em; /* Tamaño de fuente un poco más grande para párrafos */
+    line-height: 1.6; /* Espaciado de línea aumentado para mejor legibilidad */
+  }
+  
+  /* Estilos para pie de página */
+.footer {
+    font-size: 0.9em; /* Tamaño de fuente más pequeño para el pie de página */
+    font-family: Arial Black, sans-serif; /* Fuente más impactante para el pie de página */
+    text-align: center;
+    color: navy; /* Color azul marino para el texto del pie de página */
+}
+
+.btn-volver {
+    display:inline-block;
+    padding: 14px 30px;
+    background-color: #ff7b00; /* Color de fondo naranja */
+    color: white; /* Color de texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    border: 2px solid #ff7b00; /* Borde naranja */
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+  
+.btn-volver:hover {
+    background-color: #e66200; /* Color de fondo más oscuro al pasar el mouse */
+    border-color: #e66200; /* Borde más oscuro al pasar el mouse */
+}
+  
+.btn-vovler:active {
+    transform: translateY(1px); /* Efecto de clic hacia abajo */
+}
