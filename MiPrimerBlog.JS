@@ -1,4 +1,5 @@
-//AQUI VA IR MI HTML de la paginade comida
+//AQUI VA IR MI js de la paginade comida
+
 
 // Espera a que se cargue completamente el contenido del documento HTML
 document.addEventListener("DOMContentLoaded", function () {
@@ -36,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     listaComentarios.appendChild(nuevoComentario);
   }
 });
+
+
+
 
 // Obtener los enlaces de la barra de navegación AGREGAR LOS LINMCK
 var inicioLink = document.getElementById("inicioLink");
