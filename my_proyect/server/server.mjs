@@ -9,7 +9,7 @@ import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 
 // Definimos el nombre del archivo HTML que vamos a leer
-let archivoHTML = 'comida.html';
+let archivoHTML = 'my_proyect\\Html\\comida.html';
 
 // Creamos un servidor HTTP
 const server = createServer(async (request, respuesta) => {
@@ -27,9 +27,9 @@ const server = createServer(async (request, respuesta) => {
             respuesta.writeHead(500, { 'Content-Type': 'text/plain' });
             respuesta.end('Error interno del servidor');
         }
-    } else if (request.method === 'GET' && request.url === '/EstilosC.css') {
+} else if (request.method === 'GET' && request.url === 'my_proyect\\Css\\EstilosC.css') {
         // Leemos el archivo CSS
-        const data = await readFile("EstilosC.css", 'utf8');
+        const data = await readFile("my_proyect\\Css\\EstilosC.css", 'utf8');
         // Enviamos el contenido del archivo HTML como respuesta
         respuesta.writeHead(200, { 'Content-Type': 'text/html' });
         respuesta.end(data);
