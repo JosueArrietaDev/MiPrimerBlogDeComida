@@ -1,5 +1,5 @@
+//AQUI VA IR MI js de la paginade comida
 
-// ESTO ES COMENTARIOS
 
 // Espera a que se cargue completamente el contenido del documento HTML
 document.addEventListener("DOMContentLoaded", function () {
@@ -36,4 +36,42 @@ document.addEventListener("DOMContentLoaded", function () {
     // Agrega el nuevo elemento a la lista de comentarios
     listaComentarios.appendChild(nuevoComentario);
   }
+});
+
+
+
+
+// Obtener los enlaces de la barra de navegación AGREGAR LOS LINMCK
+var inicioLink = document.getElementById("inicioLink");
+var menuLink = document.getElementById("menuLink");
+var contactoLink = document.getElementById("contactoLink");
+var quienessomosLink = document.getElementById("quienessomosLink");
+
+// Asignar eventos de clic a los enlaces de navegación
+inicioLink.addEventListener("click", function (event) {
+  // Previene la acción predeterminada del enlace
+  event.preventDefault();
+  // Muestra la sección "Inicio"
+  mostrarSeccion("inicio");
+});
+
+munuLink.addEventListener("click", function (event) {
+  // Previene la acción predeterminada del enlace
+  event.preventDefault();
+  // Muestra la sección "menu"
+  mostrarSeccion("Menu");
+});
+
+quienessomosLink.addEventListener("click", function (event) {
+  // Previene la acción predeterminada del enlace
+  event.preventDefault();
+  // Muestra la sección "quienes somos"
+  mostrarSeccion("quienessomosLink");
+});
+
+contactoLink.addEventListener("click", function (event) {
+  // Previene la acción predeterminada del enlace
+  event.preventDefault();
+  // Muestra la sección "Contacto"
+  mostrarSeccion("contacto");
 });

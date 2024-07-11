@@ -2,19 +2,19 @@ Aca pongamos las ideas que nos queden o dudas,
 o cosas que quedearion pendientes.
 
 Veo que tenemos bastante avanzado todo,
-lo me q gstaria hacer es que la seccion de inicio sea 
-una secciOn mas "RECETAS"
+lo me q gstaria hacer es que la seccion de iniicio sea 
+una seccin mas
 y cambiar todo el inicio que se vera coomo un blog mas
-dinamico "como si fuese un rad social"
+dinamico 
+como si fuese un rad social,
+y lo que se ve en el inicion moverlo a otro html
+que sea un apartado de recetas como se quiso antes
 
-y lo que se ve en el inicio moverlo a otro html
-que sea un apartado de "recetas" como se quiso antes
-
--agregar Base De Datos.(para cantidad de personas,
+agregar Base De Datos.(para cantidad de personas,
 cantidad de likes o deslike que dan ellos)
 
--habria que ordenar los archivo en carpetas y 
+habria que ordenar los archivo en carpetas y 
 que quedo como proyecto decesnte: para ello ->
 Agregar Express, para que leea el css en al ejecutal
 
--Doble contador (para like y dislike)
+Doble contador (para like y dislike)

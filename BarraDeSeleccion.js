@@ -13,7 +13,7 @@ inicioLink.addEventListener("click", function (event) {
   // Muestra la sección "Inicio"
   mostrarSeccion("inicio");
 });
-agike
+
 munuLink.addEventListener("click", function (event) {
   // Previene la acción predeterminada del enlace
   event.preventDefault();
