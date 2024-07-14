@@ -1,5 +1,6 @@
 // Importamos la función `createServer` del módulo `http` de Node.js
 // Importamos la función `readFile` del módulo `fs/promises` de Node.js
+
 const { createServer } = require('http');
 const { readFile } = require('node:fs/promises');
 
@@ -38,6 +39,13 @@ const server = createServer(async (request, respuesta) => {
 
 // Definimos el puerto en el que el servidor escuchará
 const PORT = 3000;
+const express = require('express');
+const app = express();
+
+
+app.get('/', (req, res) => {
+  res.send('Hola, Mundo!');
+});
 
 // Iniciamos el servidor en el puerto especificado
 server.listen(PORT, () => {

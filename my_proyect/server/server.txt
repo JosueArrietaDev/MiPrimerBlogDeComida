@@ -1,3 +1,0 @@
-Este es un server de express para porbar el 
-html mientras se trabaja, no esta funcionando.
-y pero hay errores.
