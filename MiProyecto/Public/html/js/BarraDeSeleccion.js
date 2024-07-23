@@ -1,10 +1,10 @@
     // ESTO ES INICIO Y LINCKS DE LA BARRA DE SELECCION
 // Obtener los enlaces de la barra de navegación AGREGAR LOS LINMCK
 
-var inicioLink = document.getElementById("inicioLink");
-var menuLink = document.getElementById("menuLink");
-var contactoLink = document.getElementById("contactoLink");
-var quienessomosLink = document.getElementById("quienessomosLink");
+let inicioLink = document.getElementById("inicioLink");
+let menuLink = document.getElementById("menuLink");
+let contactoLink = document.getElementById("contactoLink");
+let quienessomosLink = document.getElementById("quienessomosLink");
 
 // Asignar eventos de clic a los enlaces de navegación
 inicioLink.addEventListener("click", function (event) {
