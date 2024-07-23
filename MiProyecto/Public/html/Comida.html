@@ -8,22 +8,20 @@
   <!--"width=device-width" Esto ajusta la pagina a cualquer dispositivo "initial-scale=1.0" zoom inicial al "100%"-->
   <!-- Palabras clave -->
   <meta name="keywords" content="HTML, ejemplo, etiquetas, página web" />
-  
   <!-- Meta para definir el autor de la página -->
   <meta name="author" content="SQUAD 1-Celsius" />
   <!-- Título -->
   <title>El Menú</title>
   <!-- Llama al CSS de la página -->
-  <link rel="stylesheet" href=".\EstilosComida.css" />
+  <link rel="stylesheet" href="./EstilosComida.css" />
   <!-- Llama al JS de los comentarios -->
-  <script src=".\js\Comentarios.js" defer></script>
+  <script src="./js/Comentarios.js" defer></script>
   <!-- Llama al JS de la barra de selección -->
-  <script src=".\js\BarraDeSeleccion.js" defer></script>
-
+  <script src="./js/BarraDeSeleccion.js" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="#"/>
+  <link rel="icon" type="image/png" href="./Pages/FavIcon/MiBlog.jpg"/>
 </head>
 
 <body>
@@ -31,10 +29,10 @@
   <header class="header">
     <!-- Podemos agregar un logo dentro de este header-->
     <nav>
-      <a id="inicioLink" href="MiProyecto\Public\html\Comida.html">INICIO</a>
+      <a id="inicioLink" href="./Comida.html">INICIO</a>
       <a id="menuLink" href="#">MENÚ</a>
-      <a id="quienesSomosLink" href=".\Pages\QuienesSomos.html">QUIENES SOMOS</a>
-      <a id="contactoLink" href=".\Pages\Contacto.html">CONTACTO</a>
+      <a id="quienesSomosLink" href="./Pages/QuienesSomos.html">QUIENES SOMOS</a>
+      <a id="contactoLink" href="./Pages/Contacto.html">CONTACTO</a>
     </nav> 
   </header>
   <section>
@@ -46,26 +44,20 @@
         Nuestra selección de las comidas que no se pueden perder si están en
         Mendoza. Mostramos 4 de las mejores comdias.
       </p>
-
       <br>
       <!-- Contenido principal -->
     </div>
   </section>
   <main>
     <br>
-    <h1 class="subtitulos">La gastronomía desde nuestros gustos.
-    </h1>
-
+    <h1 class="subtitulos">La gastronomía desde nuestros gustos.</h1>
     <section>
       <!-- Secciones de elementos -->
-
       <!-- Sección 1 -->
       <br>
       <div class="contenedor">
         <div class="imagen">
-          <img src="MiProyecto\images\imagenHamburguesa.jpg"
-          alt="Descripción de la imagen" />
-
+          <img src="./images/imagenHamburguesa.jpg" alt="Hamburguesa completa." />
         </div>
         <div class="texto">
           <h2>Hamburguesa</h2>
@@ -76,17 +68,18 @@
             salsa chimichurri o criolla.
           </p>
         </div>
-        <div class="reacciones">
-          <button class="like">👍</button>
-          <button class="dislike">👎</button>
-          <span class="contador">0</span>
+        <div>
+          <div class="photo-container">
+            <button onclick="react('comida1', 'like')">Like</button>
+            <button onclick="react('comida1', 'dislike')">Dislike</button>
+          </div>
+          <span id="reactions-comida1"></span>
         </div>
       </div>
-
       <!-- Sección 2 -->
       <div class="contenedor">
         <div class="imagen">
-          <img src="MiProyecto\images\imagenPizza.jpg" alt="Descripción de la imagen" />
+          <img src="./images/imagenPizza.jpg" alt="Muzzarela" />
         </div>
         <div class="texto">
           <h2>Pizza</h2>
@@ -97,17 +90,18 @@
             Tropical.
           </p>
         </div>
-        <div class="reacciones">
-          <button class="like">👍</button>
-          <button class="dislike">👎</button>
-          <span class="contador">0</span>
+        <div>
+          <div class="photo-container">
+            <button onclick="react('comida1', 'like')">Like</button>
+            <button onclick="react('comida1', 'dislike')">Dislike</button>
+          </div>
+          <span id="reactions-comida2"></span>
         </div>
       </div>
-
       <!-- Sección 3 -->
       <div class="contenedor">
         <div class="imagen">
-          <img src="MiProyecto\images\imagenPanchos.jpg" alt="Descripción de la imagen" />
+          <img src="./images/imagenPanchos.jpg" alt="Pancho completo" />
         </div>
         <div class="texto">
           <h2>Panchos</h2>
@@ -119,17 +113,18 @@
             papas.
           </p>
         </div>
-        <div class="reacciones">
-          <button class="like">👍</button>
-          <button class="dislike">👎</button>
-          <span class="contador">0</span>
+        <div>
+          <div class="photo-container">
+            <button onclick="react('comida1', 'like')">Like</button>
+            <button onclick="react('comida1', 'dislike')">Dislike</button>
+          </div>
+          <span id="reactions-comida1"></span>
         </div>
       </div>
-
       <!-- Sección 4 -->
       <div class="contenedor">
         <div class="imagen">
-          <img src="MiProyecto\images\imagenEmpanada.jpg" alt="Descripción de la imagen" />
+          <img src="./images/imagenEmpanada.jpg" alt="Empanadas de carne" />
         </div>
         <div class="texto">
           <h2>Empanadas</h2>
@@ -140,17 +135,17 @@
             nuestro local con los sabores más deliciosos. ¡No te lo pierdas!
           </p>
         </div>
-        <div class="reacciones">
-          <button class="like">👍</button>
-          <button class="dislike">👎</button>
-          <span class="contador">0</span>
+        <div class="photo-container">
+          <div class="reaction-buttons">
+            <button onclick="react('comida1', 'like')">Like</button>
+           <button onclick="react('comida1', 'dislike')">Dislike</button>
+          </div>
+          <span id="reactions-comida1"></span>
         </div>
       </div>
     </section>
   </main>
-
   <br>
-
   <div id="comentarios">
     <h5>Comentarios</h5>
     <ul id="listaComentarios">
@@ -163,14 +158,8 @@
       <button type="submit">Comentar</button>
     </form>
   </div>
-
   <br>
   <br>
-
-  <footer id="Footer">
-    <p>&copy; "pie de página" 2024 Grupo 1.</p>
-  </footer>
-
   <script>
     // Obtener todos los elementos con la clase 'reacciones'
     var reacciones = document.querySelectorAll('.reacciones');
@@ -194,6 +183,38 @@
         contador.textContent = Math.max(parseInt(contador.textContent) - 1, 0);
       });
     });
+
+    function react(photoId, action) {
+      fetch(`/api/reactions/${photoId}`, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ action }),
+      })
+      .then(response => response.json())
+      .then(() => updateReactions(photoId))
+      .catch(error => console.error('Error:', error));
+    }
+
+    function updateReactions(photoId) {
+      fetch(`/api/reactions/${photoId}`)
+      .then(response => response.json())
+      .then(data => {
+          document.getElementById(`reactions-${photoId}`).textContent = 
+              `Likes: ${data.likes}, Dislikes: ${data.dislikes}`;
+      })
+      .catch(error => console.error('Error:', error));
+    }
+
+    // Actualizar reacciones al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+     updateReactions('comida1');
+    });
+    
   </script>
 
+  <footer id="footer">
+    <p>&copy; "pie de página" 2024 Grupo 1.</p>
+  </footer>
 </body>

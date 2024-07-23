@@ -14,7 +14,7 @@ inicioLink.addEventListener("click", function (event) {
   mostrarSeccion("inicio");
 });
 
-munuLink.addEventListener("click", function (event) {
+menuLink.addEventListener("click", function (event) {
   // Previene la acción predeterminada del enlace
   event.preventDefault();
   // Muestra la sección "menu"

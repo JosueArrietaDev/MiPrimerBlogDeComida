@@ -1,88 +1,67 @@
 /* Este es un comentario de una línea en CSS */
 /* Estos son los estilos Externos del HTML*/
-  
+
+/* Estilo para el encabezado */
 .header {
-    text-align: center;
-    padding: 40px;
-    background-color: #f57e3a;
-
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 40px; /* Añade espacio alrededor del contenido */
+    background-color: #f57e3a; /* Color de fondo naranja */
 }
 
+/* Estilo para los enlaces de la navegación */
 nav a {
-    color: #fff;
-    padding: 20px;
-    font-size: 20px;
-    text-decoration: none;
+    color: #fff; /* Color de texto blanco */
+    padding: 20px; /* Añade espacio alrededor del texto */
+    font-size: 20px; /* Tamaño de fuente */
+    text-decoration: none; /* Elimina la decoración por defecto */
 }
 
-.titulo {
-    text-align: center;
-    background-color: #f8c621;
-    color: #c70039;
-}
-
-.subtitulos {
-    text-align: center;
-}
-
-.texto p {
-    color: rgb(255, 27, 27);
-    font-family: arial black;
-
-}
-
+/* Contenedor para las fotos y el texto */
 .contenedor {
-    display: flex;
-    margin-bottom: 20px;
-    /* Agregué un margen inferior para separar los contenedores */
+    display: flex; /* Utiliza el diseño flexbox */
+    margin-bottom: 20px; /* Añade margen inferior */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
-.contenedor {
-    display: flex;
-    justify-content: center;
-    /* Centra horizontalmente dentro del contenedor */
-    align-items: center;
-    /* Centra verticalmente dentro del contenedor */
-    margin-left: 30px;
-}
-
+/* Imagen dentro del contenedor */
 .contenedor img {
-    max-width: 100%;
-    /* La imagen no se extenderá más allá del ancho del contenedor */
-    max-height: 100%;
-    /* La imagen no se extenderá más allá de la altura del contenedor */
+    max-width: 100%; /* Limita el ancho de la imagen al contenedor */
+    max-height: 100%; /* Limita la altura de la imagen al contenedor */
 }
 
-
+/* Sección de la imagen */
 .imagen {
-    flex: 1;
-    /* Ocupa todo el espacio disponible */
-    margin-right: 20px;
-
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin-left: 20px; /* Añade margen derecho */
 }
 
+/* Sección del texto */
 .texto {
-    flex: 2;
-    /* Ocupa el doble de espacio que la imagen */
-    padding: 20px;
-    /* Añade un espacio alrededor del texto para mayor legibilidad  */
+    flex: 2; /* Ocupa el doble de espacio que la imagen */
+    padding: 20px; /* Añade espacio alrededor del texto */
+    color: rgb(255, 27, 27); /* Color de texto rojo */
+    font-family: 'Arial Black', sans-serif; /* Tipografía Arial Black */
 }
 
-.reacciones {
-    margin-bottom: 10px;
+/* Contenedor para los botones de reacción */
+.photo-container {
+    margin-bottom: 20px; /* Añade margen inferior */
 }
 
-.like, .dislike {
-    font-size: 20px;
-    cursor: pointer;
+/* Botones de reacción */
+.reaction-buttons button {
+    margin-right: 10px; /* Añade margen derecho entre botones */
 }
 
-.contador {
-    margin-left: 10px;
-    font-size: 16px;
+/* Título principal */
+.titulo {
+    text-align: center; /* Añadí 'center' como ejemplo */
 }
-  
-.Footer {
-    margin-left: 30px;
-    /* no se puede mover el footer a la izquierda*/
-}
+
+.footer {
+    font-size: 0.9em; /* Tamaño de fuente más pequeño para el pie de página */
+    font-family: Arial Black, sans-serif; /* Fuente más impactante para el pie de página */
+    text-align: center;
+    color: navy; /* Color azul marino para el texto del pie de página */
+  }
