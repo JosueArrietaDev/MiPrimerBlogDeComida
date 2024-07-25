@@ -43,22 +43,23 @@ body {
 }
 
 .btn-volver {
-    display:inline-block;
-    padding: 14px 30px;
-    background-color: #ff7b00; /* Color de fondo naranja */
-    color: white; /* Color de texto blanco */
-    text-decoration: none; /* Sin subrayado */
-    border: 2px solid #ff7b00; /* Borde naranja */
-    border-radius: 25px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+  display:inline-block;
+  padding: 14px 30px;
+  background-color: #ff7b00; /* Color de fondo naranja */
+  color: white; /* Color de texto blanco */
+  text-decoration: none; /* Sin subrayado */
+  border: 2px solid #ff7b00; /* Borde naranja */
+  border-radius: 25px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+
 }
   
 .btn-volver:hover {
-    background-color: #e66200; /* Color de fondo más oscuro al pasar el mouse */
-    border-color: #e66200; /* Borde más oscuro al pasar el mouse */
+  background-color: #e66200; /* Color de fondo más oscuro al pasar el mouse */
+  border-color: #e66200; /* Borde más oscuro al pasar el mouse */
 }
   
 .btn-vovler:active {
-    transform: translateY(1px); /* Efecto de clic hacia abajo */
+  transform: translateY(1px); /* Efecto de clic hacia abajo */
 }

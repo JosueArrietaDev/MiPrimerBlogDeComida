@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 
 // Configuración inicial
 const app = express();
-const port = 3000;
+const port = 3500;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -18,7 +18,7 @@ app.use(express.static('Public')); // Servir archivos estáticos desde la carpet
 app.use(helmet()); // Añadimos helmet para mejorar la seguridad
 
 // Conectar a la base de datos
-const db = new sqlite3.Database('./database/foodblog.db', (err) => {
+const db = new sqlite3.Database('foodblog.db', (err) => {
   if (err) {
     console.error('!Atención!, Hubo un problema al conectar con la base de datos:', err.message);
   } else {
@@ -44,6 +44,11 @@ db.run(`CREATE TABLE IF NOT EXISTS reactions (
 const validarPhotoId = (photoId) => {
   return photoId && typeof photoId === 'string' && photoId.trim() !== '';
 };
+
+// Nueva ruta para servir el archivo HTML
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Public', 'Comida.html'));
+});
 
 // Ruta para obtener reacciones
 app.get('/api/reactions/:photoId', async (req, res) => {
