@@ -1,111 +1,111 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #000000;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #ff7b00;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0.5em 0;
+}
+
+.titulo {
+  margin: 20px 0;
+}
+
+.menu {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.imagenes-redes-sociales {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.contacto {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.contacto img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.contacto .detalles {
+  text-align: left;
+}
+
+.whatsapp {
+  background-color: #01bb01;
+  color: #ffffff;
+}
+
+.facebook {
+  background-color: #4a5aee;
+  color: #ffffff;
+}
+
+.instagram {
+  background-color: #fa26fa;
+  color: #ffffff;
+}
+
+.dueños {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.dueño {
+margin: 10px 0;
+}
+
+.btn-volver {
+  display:inline-block;
+  padding: 14px 30px;
+  background-color: #ff7b00; /* Color de fondo naranja */
+  color: white; /* Color de texto blanco */
+  text-decoration: none; /* Sin subrayado */
+  border: 2px solid #ff7b00; /* Borde naranja */
+  border-radius: 25px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.btn-volver:hover {
+  background-color: #e66200; /* Color de fondo más oscuro al pasar el mouse */
+  border-color: #e66200; /* Borde más oscuro al pasar el mouse */
+}
+
+.btn-vovler:active {
+  transform: translateY(1px); /* Efecto de clic hacia abajo */
+}
+
+.footer {
+  font-size: 0.9em; /* Tamaño de fuente más pequeño para el pie de página */
+  font-family: Arial Black, sans-serif; /* Fuente más impactante para el pie de página */
+  text-align: center;
+  color: navy; /* Color azul marino para el texto del pie de página */
+}
   
-  header, footer {
-    background-color: #ff7b00;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  h1, h2, h3 {
-    margin: 0.5em 0;
-  }
-  
-  .titulo {
-    margin: 20px 0;
-  }
-  
-  .menu {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
-  
-  .imagenes-redes-sociales {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-  }
-  
-  .contacto {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-  }
-  
-  .contacto img {
-    width: 80px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .contacto .detalles {
-    text-align: left;
-  }
-  
-  .whatsapp {
-    background-color: #01bb01;
-    color: #ffffff;
-  }
-  
-  .facebook {
-    background-color: #4a5aee;
-    color: #ffffff;
-  }
-  
-  .instagram {
-    background-color: #fa26fa;
-    color: #ffffff;
-  }
-  
-  .dueños {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
-  
-  .dueño {
-  margin: 10px 0;
-  }
-  
-  .btn-volver {
-    display:inline-block;
-    padding: 14px 30px;
-    background-color: #ff7b00; /* Color de fondo naranja */
-    color: white; /* Color de texto blanco */
-    text-decoration: none; /* Sin subrayado */
-    border: 2px solid #ff7b00; /* Borde naranja */
-    border-radius: 25px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
-  }
-  
-  .btn-volver:hover {
-    background-color: #e66200; /* Color de fondo más oscuro al pasar el mouse */
-    border-color: #e66200; /* Borde más oscuro al pasar el mouse */
-  }
-  
-  .btn-vovler:active {
-    transform: translateY(1px); /* Efecto de clic hacia abajo */
-  }
-  
-  .footer {
-    font-size: 0.9em; /* Tamaño de fuente más pequeño para el pie de página */
-    font-family: Arial Black, sans-serif; /* Fuente más impactante para el pie de página */
-    text-align: center;
-    color: navy; /* Color azul marino para el texto del pie de página */
-  }
-    
