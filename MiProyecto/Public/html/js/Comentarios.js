@@ -1,39 +1,125 @@
-// ESTO ES COMENTARIOS
-
-// Espera a que se cargue completamente el contenido del documento HTML
 document.addEventListener("DOMContentLoaded", function () {
-    // Obtiene referencias a los elementos del formulario y de la lista de comentarios
     const formularioComentario = document.getElementById("formularioComentario");
     const inputComentario = document.getElementById("inputComentario");
     const listaComentarios = document.getElementById("listaComentarios");
-    // Agrega un event listener al formulario para el evento 'submit'
+  
     formularioComentario.addEventListener("submit", function (event) {
-      // Previene el comportamiento por defecto del formulario (enviar los datos a algún lugar)
-      event.preventDefault();
-      // Obtiene el valor del comentario y del nombre de usuario de los campos correspondientes
-      const comentario = inputComentario.value;
-      const username = document.getElementById("username").value;
-      // Verifica que tanto el comentario como el nombre de usuario no estén vacíos
-      if (comentario.trim() !== "" && username.trim() !== "") {
-        // Llama a la función 'agregarComentario()' para agregar el comentario a la lista de comentarios
-        agregarComentario(username, comentario);
-        // Limpia los campos de comentario y nombre de usuario después de agregar el comentario
-        inputComentario.value = "";
-        document.getElementById("username").value = "";
-      } else {
-        // Muestra una alerta pidiendo al usuario que introduzca su nombre y comentario
-        alert("Por favor, introduce tu nombre y comentario.");
-      }
+        event.preventDefault();
+        const comentario = inputComentario.value;
+        const username = document.getElementById("username").value;
+  
+        if (comentario.trim() !== "" && username.trim() !== "") {
+            const comentarioData = {
+                foto_id: obtenerFotoId(),
+                usuario: username,
+                comentario_texto: comentario,
+                reaccion: 'like',  // Ajusta según sea necesario
+                ip_persona: obtenerIP()
+            };
+  
+            fetch('http://localhost:3000/comentarios', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(comentarioData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.comentario_id) {
+                    agregarComentario(username, comentario);
+                    inputComentario.value = "";
+                    document.getElementById("username").value = "";
+                } else {
+                    alert('Error al guardar el comentario.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error al guardar el comentario.');
+            });
+        } else {
+            alert("Por favor, introduce tu nombre y comentario.");
+        }
     });
-    // Define la función para agregar un comentario a la lista de comentarios
+  
     function agregarComentario(username, comentario) {
-      // Crea un nuevo elemento de lista (<li>)
-      const nuevoComentario = document.createElement("li");
-      // Asigna el contenido del comentario junto con el nombre de usuario en formato de negrita
-      nuevoComentario.innerHTML =
-        "<strong>" + username + ":</strong> " + comentario;
-      // Agrega el nuevo elemento a la lista de comentarios
-      listaComentarios.appendChild(nuevoComentario);
+        const nuevoComentario = document.createElement("li");
+        nuevoComentario.innerHTML = "<strong>" + username + ":</strong> " + comentario;
+        listaComentarios.appendChild(nuevoComentario);
+    }
+  
+    document.querySelectorAll('.reaction-contenedor').forEach(container => {
+        const likeButton = container.querySelector('.like-button');
+        const deslikeButton = container.querySelector('.deslike-button');
+        const likeCount = container.querySelector('.like-count');
+        const deslikeCount = container.querySelector('.deslike-count');
+  
+        likeButton.addEventListener('click', () => {
+            const reaccionData = {
+                foto_id: obtenerFotoId(),
+                like: true,
+                ip_persona: obtenerIP()
+            };
+  
+            fetch('http://localhost:3000/reacciones', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(reaccionData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.reaccion_id) {
+                    likeCount.textContent = parseInt(likeCount.textContent) + 1;
+                } else {
+                    alert('Error al guardar la reacción.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error al guardar la reacción.');
+            });
+        });
+  
+        deslikeButton.addEventListener('click', () => {
+            const reaccionData = {
+                foto_id: obtenerFotoId(),
+                like: false,
+                ip_persona: obtenerIP()
+            };
+  
+            fetch('http://localhost:3000/reacciones', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(reaccionData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.reaccion_id) {
+                    deslikeCount.textContent = parseInt(deslikeCount.textContent) + 1;
+                } else {
+                    alert('Error al guardar la reacción.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error al guardar la reacción.');
+            });
+        });
+    });
+  
+    function obtenerFotoId() {
+        // Esta función debe obtener el ID de la foto correspondiente. Ajusta según sea necesario.
+        return 1;
+    }
+  
+    function obtenerIP() {
+        // Esta función debe obtener la IP del usuario. Ajusta según sea necesario.
+        return '127.0.0.1';
     }
   });
   
