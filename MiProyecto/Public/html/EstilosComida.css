@@ -1,0 +1,154 @@
+/* Este es un comentario de una línea en CSS */
+/* Estos son los estilos Externos del HTML*/
+
+/* Estilo para el encabezado */
+.header {
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 40px; /* Añade espacio alrededor del contenido */
+    background-color: #f57e3a; /* Color de fondo naranja */
+}
+
+body {
+    background-color: #ffffff; /* Color de fondo base */
+    background-image: 
+        linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 75%, transparent 75%, transparent);
+    background-size: 20px 20px; /* Tamaño del patrón */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.subtitulos{
+    color: #040404; /* Color de texo */
+}
+
+p{ 
+    color: #040404; /* Color de texo */
+}
+/* Estilo para los enlaces de la navegación */
+nav a {
+    color: #fff; /* Color de texto blanco */
+    padding: 20px; /* Añade espacio alrededor del texto */
+    font-size: 20px; /* Tamaño de fuente */
+    text-decoration: none; /* Elimina la decoración por defecto */
+}
+
+/* Contenedor para las fotos y el texto */
+.contenedor {
+    display: flex; /* Utiliza el diseño flexbox */
+    margin-bottom: 20px; /* Añade margen inferior */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+/* Imagen dentro del contenedor */
+.contenedor img {
+    max-width: 100%; /* Limita el ancho de la imagen al contenedor */
+    max-height: 100%; /* Limita la altura de la imagen al contenedor */
+}
+
+/* Sección de la imagen */
+.imagen {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin-left: 20px; /* Añade margen derecho */
+}
+
+/* Sección del texto */
+.texto {
+    flex: 2; /* Ocupa el doble de espacio que la imagen */
+    padding: 20px; /* Añade espacio alrededor del texto */
+    color: rgb(255, 27, 27); /* Color de texto rojo */
+    font-family: 'Arial Black', sans-serif; /* Tipografía Arial Black */
+}
+
+/* Título principal */
+.titulo {
+    text-align: center; /* Añadí 'center' como ejemplo */
+}
+  
+/* Contenedor de comentarios */
+#comentarios {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+#comentarios h5 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos adicionales */
+#comentarios h5 {
+    color: #333; /* Color del título */
+}
+    
+#listaComentarios {
+    list-style: none;
+    padding: 0;
+}
+  
+#listaComentarios li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#listaComentarios li {
+    background-color: #f5f5f5; /* Color de fondo de los comentarios */
+}
+
+/* Formulario de comentarios */
+#formularioComentario {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 20px; /* Agrega espacio arriba del formulario */
+}
+  
+#username, #inputComentario {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#username, #inputComentario {
+    background-color: #fff; /* Color de fondo de los inputs */
+}
+
+#username::placeholder, #inputComentario::placeholder {
+    color: #999;
+}
+  
+.circular-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; /* Agregamos una transición suave */
+}
+  
+.circular-button:active {
+    transform: scale(0.95); /* Reducimos ligeramente el tamaño al presionar */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Agregamos una sombra para simular profundidad */
+}
+    
+/* Botones de reacción */
+.reaction-buttons button {
+    margin-right: 10px; /* Añade margen derecho entre botones */
+}
+
+
+/* Contenedor para los botones de reacción */
+.photo-container {
+    margin-bottom: 20px; /* Añade margen inferior */
+}
+
+

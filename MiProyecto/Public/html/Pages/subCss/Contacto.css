@@ -102,7 +102,10 @@ margin: 10px 0;
   transform: translateY(1px); /* Efecto de clic hacia abajo */
 }
 
-footer p {
-  margin: 0;
+.footer {
+  font-size: 0.9em; /* Tamaño de fuente más pequeño para el pie de página */
+  font-family: Arial Black, sans-serif; /* Fuente más impactante para el pie de página */
+  text-align: center;
+  color: navy; /* Color azul marino para el texto del pie de página */
 }
   
