@@ -39,7 +39,7 @@ const db = new sqlite3.Database(dbPath, (err) => {
 });
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'MiProyecto', 'Public')));
+app.use(express.static(path.join(__dirname, 'MiProyecto', 'Public','html')));
 
 // Configurar CSP
 app.use((req, res, next) => {
@@ -48,7 +48,7 @@ app.use((req, res, next) => {
 });
 
 // Ruta para manejar comentarios
-app.post('MiProyecto/Public/html/js/Comentarios.js', (req, res) => {
+app.post('MiProyecto/Public/js/Comentarios.js', (req, res) => {
     const { nombre, comentario } = req.body;
     const query = `INSERT INTO Comentarios (nombre, comentario) VALUES (?, ?)`;
     db.run(query, [nombre, comentario], function (err) {
@@ -60,7 +60,7 @@ app.post('MiProyecto/Public/html/js/Comentarios.js', (req, res) => {
 });
 
 // Ruta para manejar reacciones
-app.post('MiProyecto/Public/html/js/Comentarios.js', (req, res) => {
+app.post('MiProyecto/Public/js/Comentarios.js', (req, res) => {
     const { tipo } = req.body; // 'like' o 'dislike'
     const query = `INSERT INTO Reacciones (tipo) VALUES (?)`;
     db.run(query, [tipo], function (err) {
