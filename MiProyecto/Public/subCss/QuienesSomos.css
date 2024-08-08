@@ -30,7 +30,7 @@ body {
   p {
     margin-bottom: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2em; /* Tamaño de fuente un poco más grande para párrafos */
+    font-size: 18px; /* Tamaño de fuente un poco más grande para párrafos */
     line-height: 1.6; /* Espaciado de línea aumentado para mejor legibilidad */
   }
   
@@ -43,8 +43,8 @@ body {
 }
 
 .btn-volver {
-  display:inline-block;
-  padding: 14px 30px;
+  display:inline-block; /*Hace que el botón se comporte como un bloque*/
+  padding: 15px 30px; /*Tamaño del botón*/
   background-color: #ff7b00; /* Color de fondo naranja */
   color: white; /* Color de texto blanco */
   text-decoration: none; /* Sin subrayado */
