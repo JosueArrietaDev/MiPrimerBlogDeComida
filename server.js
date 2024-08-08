@@ -39,7 +39,7 @@ const db = new sqlite3.Database(dbPath, (err) => {
 });
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'MiProyecto', 'Public','html')));
+app.use(express.static(path.join(__dirname, 'MiProyecto', 'Public','html','Comida.html')));
 
 // Configurar CSP
 app.use((req, res, next) => {

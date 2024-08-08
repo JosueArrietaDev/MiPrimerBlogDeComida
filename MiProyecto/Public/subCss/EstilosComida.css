@@ -65,7 +65,11 @@ nav a {
 .titulo {
     text-align: center; /* Añadí 'center' como ejemplo */
 }
-  
+
+#footer{
+    text-align: center;
+}
+
 /* Contenedor de comentarios */
 #comentarios {
     width: 500px;
@@ -125,13 +129,13 @@ nav a {
 }
   
 .circular-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 40px; /*Ancho*/
+    height: 40px;/*Alto*/
+    border-radius: 50%;/*bordes circulares*/
     background-color: #007bff;
     color: white;
     border: none;
-    cursor: pointer;
+    cursor: pointer; /*hace que el cursor se transforme*/
     transition: all 0.2s ease-in-out; /* Agregamos una transición suave */
 }
   
@@ -144,11 +148,3 @@ nav a {
 .reaction-buttons button {
     margin-right: 10px; /* Añade margen derecho entre botones */
 }
-
-
-/* Contenedor para los botones de reacción */
-.photo-container {
-    margin-bottom: 20px; /* Añade margen inferior */
-}
-
-
